@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		https://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- spring完成ioc 对象的创建   -->
+    <bean id="addr" class="com.xx.spring.test1.Address">
+        <!--   DI:依赖的注入  属性赋值    -->
+        <property name="province" value="湖南省"></property>
+        <property name="city" value="衡阳市"></property>
+    </bean>
+
+    <!--  创建的是一个map对象  map：<String,Object>  -->
+    <!--  map: "s"  Student对象  -->
+    <bean id="s" class="com.xx.spring.test1.Student">
+    <!--   DI:依赖的注入     -->
+        <property name="id" value="100"></property>
+        <property name="name" value="张三"></property>
+
+    <!--  ref表示引入spring容器中的另一个托管bean       -->
+        <property name="address" ref="addr"></property>
+    </bean>
+
+
+
+
+
+</beans>
