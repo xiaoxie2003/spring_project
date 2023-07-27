@@ -1,5 +1,1 @@
-15:02:01.909 ERROR TestMain 7 main - error
-15:02:01.911 WARN  TestMain 8 main - warn
-15:02:01.911 INFO  TestMain 9 main - info
-15:02:01.911 DEBUG TestMain 10 main - debug
-15:02:01.911 TRACE TestMain 11 main - trace
+17:07:17.257 INFO  org.ycframework.context.YcAnnotationConfigApplicatioonContext 38 <init> - com.yc.MyConfig类上有@YcComponentScan注解，它要扫描的路径为：com.yc
