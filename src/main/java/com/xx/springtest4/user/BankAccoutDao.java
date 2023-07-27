@@ -19,6 +19,7 @@ public class BankAccoutDao extends JdbcTemplate {
     }
 
     public List<BankAccout> findAll(){
+        //子类BankAccoutDao调用父类JdbcTemplate方法executeQuery（）
         return super.executeQuery("select * from bank where id = ? ", new RowMapper<Object>() {
             @Override
             public Object mapper(ResultSet rs,int i) throws SQLException {

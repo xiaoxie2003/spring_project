@@ -13,6 +13,7 @@ import java.util.logging.Logger;
 
 @Component //托管
 public class MyDataSource implements DataSource {
+    //连接池
     private ConcurrentLinkedQueue<MyConnection> pool;
 
     //配置后注入属性 结合属性完成注入操作
@@ -33,6 +34,7 @@ public class MyDataSource implements DataSource {
     @PostConstruct //此方法在构造方法之后执行 即初始化连接池
     public void init() throws SQLException {
         System.out.println("MyDataSource的init()");
+        //连接池用同步队列 每次取队头 避免冲突
         pool = new ConcurrentLinkedQueue<>();
         for (int i = 0; i < coreSize; i++) {
             //创建连接对象
@@ -52,6 +54,11 @@ public class MyDataSource implements DataSource {
         boolean statue;  //true再用 false空闲
     }
 
+    /**
+     * 获取连接
+     * @return
+     * @throws SQLException
+     */
     @Override
     public Connection getConnection() throws SQLException {
         do{
@@ -67,6 +74,10 @@ public class MyDataSource implements DataSource {
         }while (true);
     }
 
+    /**
+     * 返回连接 用完的连接不关闭 返回到连接池中
+     * @param con
+     */
     public void returnConnection(Connection con){
         MyConnection mc = new MyConnection();
         mc.statue = false;

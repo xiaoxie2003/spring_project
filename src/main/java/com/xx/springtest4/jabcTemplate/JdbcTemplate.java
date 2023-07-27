@@ -22,7 +22,7 @@ public abstract class JdbcTemplate<T> {
     }
 
     //查询的模板方法
-    public List<T> executeQuery(String sql, RowMapper<?> rowMapper, Object...params){
+    public List<T> executeQuery(String sql, RowMapper<T> rowMapper, Object...params){
         //模板方法
         List<T> list=new ArrayList();
         Connection con = null;
@@ -41,7 +41,7 @@ public abstract class JdbcTemplate<T> {
             //5. 循环resultSet
             int i = 0;
             while (rs.next()) {
-                T t = (T) rowMapper .mapper(rs, i);
+                T t = (T) rowMapper.mapper(rs, i);
                 i++;
                 list.add(t);
             }
@@ -62,6 +62,7 @@ public abstract class JdbcTemplate<T> {
                     e.printStackTrace();
                 }
             }
+            //返回连接
             ((MyDataSource)dataSource).returnConnection(con);
         }
         return list;
