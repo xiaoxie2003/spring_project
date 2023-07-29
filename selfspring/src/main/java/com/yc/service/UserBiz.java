@@ -1,4 +1,4 @@
-package com.yc;
+package com.yc.service;
 
 public interface UserBiz {
     public void add(String name);

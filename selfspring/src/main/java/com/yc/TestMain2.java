@@ -1,5 +1,6 @@
 package com.yc;
 
+import com.yc.service.UserBiz;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.ycframework.context.YcAnnotationConfigApplicatioonContext;
@@ -15,7 +16,7 @@ public class TestMain2 {
 //        logger.trace("trace");
 
         YcApplicationContext ac = new YcAnnotationConfigApplicatioonContext(MyConfig.class);
-//        UserBiz ub = (UserBiz) ac.getBean("userBizImpl");
-//        ub.add("张三");
+        UserBiz ub = (UserBiz) ac.getBean("ub");
+        ub.add("张三");
     }
 }

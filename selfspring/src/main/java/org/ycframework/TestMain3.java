@@ -1,9 +1,7 @@
 package org.ycframework;
 
 import com.yc.MyConfig;
-import com.yc.UserBiz;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import com.yc.service.UserBiz;
 import org.ycframework.context.YcAnnotationConfigApplicatioonContext;
 import org.ycframework.context.YcApplicationContext;
 
