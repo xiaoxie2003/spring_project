@@ -30,7 +30,7 @@ public class DataSourceConfig {
     //以上属性从配置文件读取出来后，都存到了spring容器的Environment的变量（系统属性）
 
     //value="#{ T(java.lang.Math).random() * 100.0 }"
-    @Value("#{ T(Runtime).getRuntime().availableProcessors()*2}") //value里面接表达式
+    @Value("#{ T(Runtime).getRuntime().availableProcessors()*2}") //value里面接表达式 进行运算
     private int cpCount;
 
     //参数：第三方的框架中的类 用@Bean托管
