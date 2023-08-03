@@ -219,3 +219,6 @@ D:\yuanchen\aThree_javaSpring\spring\spring_project\spring_project\txbank
 14:17:13.374 INFO  com.yc.configs.DataSourceConfig 47 druidDataSource - 配置druid的连接池的大小：24
 14:17:15.184 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
 14:18:12.852 INFO  com.yc.dao.AccountDaoJdbcTemplateImplTest 55 insert - 新开账号为：68
+18:41:47.039 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
+18:41:48.489 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+18:41:48.527 INFO  com.yc.Test2_DataSourceConfig 50 testTransactionManager - org.springframework.jdbc.datasource.DataSourceTransactionManager@2187fff7

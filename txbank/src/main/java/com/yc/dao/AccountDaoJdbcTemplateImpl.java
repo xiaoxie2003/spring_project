@@ -29,6 +29,7 @@ public class AccountDaoJdbcTemplateImpl implements AccountDao{
 
     @Override
     public int insert(double money) {
+        //遇见自增列要加KeyHolder keyHolder = new GeneratedKeyHolder();
         KeyHolder keyHolder = new GeneratedKeyHolder();
         jdbcTemplate.update(connection -> {
             PreparedStatement ps = connection.prepareStatement("insert into accounts (balance) values (?)", new String[] { "accountid" });
