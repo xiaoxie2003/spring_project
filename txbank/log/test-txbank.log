@@ -1,0 +1,68 @@
+14:57:31.667 INFO  com.yc.Test1 26 TestAddAccount - hello
+14:59:15.155 INFO  com.yc.Test1 26 TestAddAccount - hello
+15:00:35.924 INFO  com.yc.Test1 26 TestAddAccount - hello
+15:00:35.924 INFO  com.yc.Test1 26 TestAddAccount - hello
+15:11:26.223 INFO  com.yc.Test2_DataSourceConfig 24 testProperties - root
+15:11:31.805 INFO  com.yc.Test2_DataSourceConfig 24 testProperties - root
+15:13:06.377 INFO  com.yc.Test2_DataSourceConfig 33 testEnvironment - aaaa
+15:13:41.968 INFO  com.yc.Test2_DataSourceConfig 33 testEnvironment - aaaa	C:\Users\LENOVO
+15:14:01.743 INFO  com.yc.Test2_DataSourceConfig 33 testEnvironment - aaaa
+D:\yuanchen\aThree_javaSpring\spring\spring_project\spring_project\txbank
+16:39:16.606 INFO  com.yc.Test2_DataSourceConfig 43 testDBCPConnection - com.mysql.cj.jdbc.ConnectionImpl@1ddae9b5
+16:39:52.513 INFO  com.yc.Test2_DataSourceConfig 50 testDbcpConnection - 373544591, URL=jdbc:mysql://localhost:3306/db_bank?serverTimezone=UTC, MySQL Connector/J
+18:29:47.010 INFO  com.yc.configs.DataSourceConfig 47 druidDataSource - 配置druid的连接池的大小：24
+18:29:48.588 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+18:29:48.620 ERROR org.springframework.test.context.TestContextManager 252 prepareTestInstance - Caught exception while allowing TestExecutionListener [org.springframework.test.context.support.DependencyInjectionTestExecutionListener@7c041b41] to prepare test instance [null(com.yc.Test2_DataSourceConfig)] org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'com.yc.Test2_DataSourceConfig': Unsatisfied dependency expressed through field 'druidDataSouce'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=druidDataSouce)}
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireBeanProperties(AbstractAutowireCapableBeanFactory.java:417) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.injectDependencies(DependencyInjectionTestExecutionListener.java:119) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.support.DependencyInjectionTestExecutionListener.prepareTestInstance(DependencyInjectionTestExecutionListener.java:83) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.TestContextManager.prepareTestInstance(TestContextManager.java:248) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.createTest(SpringJUnit4ClassRunner.java:227) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner$1.runReflectiveCall(SpringJUnit4ClassRunner.java:289) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.junit.internal.runners.model.ReflectiveCallable.run(ReflectiveCallable.java:12) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.methodBlock(SpringJUnit4ClassRunner.java:291) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:246) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.runChild(SpringJUnit4ClassRunner.java:97) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.junit.runners.ParentRunner$4.run(ParentRunner.java:331) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$1.schedule(ParentRunner.java:79) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.runChildren(ParentRunner.java:329) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.access$100(ParentRunner.java:66) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner$2.evaluate(ParentRunner.java:293) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.statements.RunBeforeTestClassCallbacks.evaluate(RunBeforeTestClassCallbacks.java:61) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.springframework.test.context.junit4.statements.RunAfterTestClassCallbacks.evaluate(RunAfterTestClassCallbacks.java:70) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.junit.runners.ParentRunner$3.evaluate(ParentRunner.java:306) ~[junit-4.13.1.jar:4.13.1]
+	at org.junit.runners.ParentRunner.run(ParentRunner.java:413) ~[junit-4.13.1.jar:4.13.1]
+	at org.springframework.test.context.junit4.SpringJUnit4ClassRunner.run(SpringJUnit4ClassRunner.java:190) ~[spring-test-5.3.24.jar:5.3.24]
+	at org.junit.runner.JUnitCore.run(JUnitCore.java:137) ~[junit-4.13.1.jar:4.13.1]
+	at com.intellij.junit4.JUnit4IdeaTestRunner.startRunnerWithArgs(JUnit4IdeaTestRunner.java:69) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater$1.execute(IdeaTestRunner.java:38) ~[junit-rt.jar:?]
+	at com.intellij.rt.execution.junit.TestsRepeater.repeat(TestsRepeater.java:11) ~[idea_rt.jar:?]
+	at com.intellij.rt.junit.IdeaTestRunner$Repeater.startRunnerWithArgs(IdeaTestRunner.java:35) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.prepareStreamsAndStart(JUnitStarter.java:232) ~[junit-rt.jar:?]
+	at com.intellij.rt.junit.JUnitStarter.main(JUnitStarter.java:55) ~[junit-rt.jar:?]
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'javax.sql.DataSource' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true), @org.springframework.beans.factory.annotation.Qualifier(value=druidDataSouce)}
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1801) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1357) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.24.jar:5.3.24]
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.24.jar:5.3.24]
+	... 31 more
+
+18:34:43.724 INFO  com.yc.configs.DataSourceConfig 47 druidDataSource - 配置druid的连接池的大小：24
+18:34:45.372 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+18:34:45.416 INFO  com.yc.Test2_DataSourceConfig 48 testDruidDataSource - com.mysql.cj.jdbc.ConnectionImpl@6bab2585	24
+20:40:44.053 INFO  com.yc.configs.DataSourceConfig 47 druidDataSource - 配置druid的连接池的大小：24
+20:40:45.585 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:40:45.621 INFO  com.yc.Test1 27 TestAddAccount - hello
+20:40:45.635 INFO  com.yc.configs.DataSourceConfig 47 druidDataSource - 配置druid的连接池的大小：24
+20:40:45.961 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-2} inited
+20:40:45.969 INFO  com.yc.Test2_DataSourceConfig 68 testProperties - root
+20:40:46.019 INFO  com.yc.Test2_DataSourceConfig 62 testDbcpConnection - 1052842393, URL=jdbc:mysql://localhost:3306/db_bank?serverTimezone=UTC, MySQL Connector/J
+20:40:46.023 INFO  com.yc.Test2_DataSourceConfig 48 testDruidDataSource - com.mysql.cj.jdbc.ConnectionImpl@7df587ef	24
+20:40:46.025 INFO  com.yc.Test2_DataSourceConfig 73 testEnvironment - 4444
+D:\yuanchen\aThree_javaSpring\spring\spring_project\spring_project\txbank
+20:40:46.051 INFO  com.yc.Test2_DataSourceConfig 55 testDsConnection - com.mysql.cj.jdbc.ConnectionImpl@56db847e

@@ -1,6 +1,7 @@
 package com.yc;
 
 import com.yc.biz.AccountBiz;
+import com.yc.configs.Config;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 
