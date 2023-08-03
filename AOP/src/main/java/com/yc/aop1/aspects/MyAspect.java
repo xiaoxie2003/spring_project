@@ -9,23 +9,23 @@ import java.util.Date;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
-//@Component
-//@Aspect
+@Component
+@Aspect
 public class MyAspect {
     //切入点表达式：正则表达式 筛选 目标类中哪些方法加增强
     //*：表示所有
-    //..：表示 0或者n
+    //..：表示 0或者n  所有以make开头的方法
     @Pointcut("execution(* com.yc.aop1.biz.*.make*(..))")
     private void a() {
     }
 
-    @Before("a()")
+    @Before("a()") //在a()方法代表的切点方法运行之前运行
     public void recordTime() {
         Date d = new Date();
         System.out.println("========下单的时间为：" + d);
     }
 
-    @AfterReturning("a()")
+    @AfterReturning("a()") //正常返回 不管有没有返回值 这个增强才起作用 在连接点方法运行完之后运行
     public void sendEmail() {
         System.out.println("调用数据库查询此下单用户的email，包装信息，发到信息中间件 kafka/mq .");
     }
@@ -72,7 +72,7 @@ public class MyAspect {
 
     private Map<String,Long> map2 = new ConcurrentHashMap<String ,Long>();
     //统计每个商品名_编号_被查询的次数
-    @AfterReturning(pointcut = "c()",returning = "retValue")
+    @AfterReturning(pointcut = "c()",returning = "retValue") //正常返回 有返回值  这个增强才起作用 在连接点方法运行完之后运行
     public void recordPname2(JoinPoint jp,int retValue){//DI方式注入
         Object[] objs = jp.getArgs();
         String name = (String)objs[0];
@@ -81,12 +81,12 @@ public class MyAspect {
             num = map2.get(name);
             num++;
         }
-        map2.put(name + ":" + retValue,num);
+        map2.put(name + ":" + retValue,num);  //retValue:8   name:"apple"  num:1
         System.out.println("统计结果：" + map2);
     }
 
     //对异常进行处理
-    @AfterThrowing(pointcut = "a()",throwing = "ex")
+    @AfterThrowing(pointcut = "a()",throwing = "ex")  //有异常才执行 在原方法之后
     public void recordException(JoinPoint jp,RuntimeException ex){
         System.out.println("********异常了********");
         System.out.println(ex.getMessage());
