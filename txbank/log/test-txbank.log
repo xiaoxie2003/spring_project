@@ -222,3 +222,41 @@ D:\yuanchen\aThree_javaSpring\spring\spring_project\spring_project\txbank
 18:41:47.039 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
 18:41:48.489 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
 18:41:48.527 INFO  com.yc.Test2_DataSourceConfig 50 testTransactionManager - org.springframework.jdbc.datasource.DataSourceTransactionManager@2187fff7
+19:53:44.859 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
+19:53:46.332 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:53:46.406 INFO  com.yc.biz.AccountBizImplTest 57 findAccount - Account(accountid=44, money=707.9)
+19:53:59.881 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
+19:54:01.313 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:54:01.422 INFO  com.yc.biz.AccountBizImplTest 29 openAccount - Account(accountid=69, money=100.0)
+19:54:15.873 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
+19:54:17.317 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:54:17.426 INFO  com.yc.biz.AccountBizImplTest 36 deposite - Account(accountid=44, money=807.9)
+19:55:05.403 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
+19:55:06.860 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:55:06.970 INFO  com.yc.biz.AccountBizImplTest 43 withdraw - Account(accountid=44, money=607.9)
+19:55:18.996 INFO  com.yc.configs.DataSourceConfig 63 druidDataSource - 配置druid的连接池的大小：24
+19:55:20.494 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+19:55:20.634 INFO  com.yc.biz.AccountBizImplTest 50 transfer - Account(accountid=44, money=607.9)
+20:20:24.925 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:20:26.384 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:20:26.488 INFO  com.yc.biz.AccountBizImplTest 43 withdraw - Account(accountid=44, money=-9292.1)
+20:25:51.526 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:25:52.991 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:27:36.241 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:27:37.738 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:28:15.587 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:28:17.029 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:28:17.139 INFO  com.yc.biz.AccountBizImplTest 35 deposite - Account(accountid=44, money=807.9)
+20:28:27.796 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:28:29.305 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:29:08.830 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:29:10.299 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:29:10.402 INFO  com.yc.biz.AccountBizImplTest 42 withdraw - Account(accountid=44, money=707.9)
+20:29:28.973 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:29:30.472 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:29:30.569 INFO  com.yc.biz.AccountBizImplTest 49 transfer - Account(accountid=44, money=607.9)
+20:29:44.420 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:29:45.913 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited
+20:29:46.000 INFO  com.yc.biz.AccountBizImplTest 56 findAccount - Account(accountid=44, money=607.9)
+20:30:31.028 INFO  com.yc.configs.DataSourceConfig 66 druidDataSource - 配置druid的连接池的大小：24
+20:30:32.503 INFO  com.alibaba.druid.support.logging.Log4j2Impl 106 info - {dataSource-1} inited

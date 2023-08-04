@@ -24,7 +24,6 @@ public class OpRecoredJdbcTemplateImpl implements OpRecoedDao{
         String sql = "insert into oprecord(accountid,opmoney,optime,optype,transferid) values(?,?,now(),?,?)";
         this.jdbcTemplate.update(sql,opRecord.getAccountid(),opRecord.getOpmoney(),opRecord.getOptype().getKey(),
                 opRecord.getTransferid());
-
     }
 
     @Override
