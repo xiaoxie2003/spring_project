@@ -41,7 +41,7 @@ public class DataSourceConfig {
      * @param ds
      * @return
      */
-    @Bean
+    @Bean//引入第三方文件
     public TransactionManager dataSourceTransactionManager(@Autowired DataSource ds){ //在表达式里注入DataSource
         DataSourceTransactionManager tx = new DataSourceTransactionManager();
         tx.setDataSource(ds); //给事务管理器设置数据源
